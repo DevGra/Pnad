@@ -1,0 +1,12 @@
+Leia-me
+
+Pesquisa Nacional por Amostra de Domicílios
+Apresenta tabelas com informações sobre população, como sexo, idade, 
+instrução, trabalho e rendimento, sobre famílias e  características dos 
+domicílios, bem como dados sobre migração, fecundidade, nupcialidade, entre 
+outros, que são levantados com periodicidade variável, tendo como unidade de
+coleta os domicílios.
+Temas específicos abrangendo aspectos demográficos, sociais e econômicos 
+também são investigados.
+Os resultados são divulgados para Brasil, grande região unidade da federação 
+e região metropolitana.
