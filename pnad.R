@@ -29,3 +29,6 @@ setwd('./download')
 pn_2018 <- read_pnadc("2018/PNADC_2018_visita1.txt", "2018/Input_PNADC_1_visita_2018_20191016.txt")
 pn_2017 <- read_pnadc("2017/PNADC_2017_visita1.txt", "2017/Input_PNADC_1_visita_2017_20191016.txt")
 
+# --------------------- dicionarios -----------------------
+
+dados_pnadc <- pnadc_labeller(pn_2018, "../dicionarios/dicionario_PNAD_CONTINUA_MICRODADOS_1_visita_2018_20191016.xls")
