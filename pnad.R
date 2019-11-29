@@ -26,9 +26,17 @@ for (ano in anos) {
 
 # read_pnadc(microdata, input_txt, vars = NULL)
 setwd('./download')
-pn_2018 <- read_pnadc("2018/PNADC_2018_visita1.txt", "2018/Input_PNADC_1_visita_2018_20191016.txt")
 pn_2017 <- read_pnadc("2017/PNADC_2017_visita1.txt", "2017/Input_PNADC_1_visita_2017_20191016.txt")
+pn_2018 <- read_pnadc("2018/PNADC_2018_visita1.txt", "2018/Input_PNADC_1_visita_2018_20191016.txt")
 
 # --------------------- dicionarios -----------------------
 
-dados_pnadc <- pnadc_labeller(pn_2018, "../dicionarios/dicionario_PNAD_CONTINUA_MICRODADOS_1_visita_2018_20191016.xls")
+dados_2017 <- pnadc_labeller(pn_2017, "../dicionarios/dicionario_PNAD_CONTINUA_MICRODADOS_1_visita_2017_20191016.xls")
+dados_2018 <- pnadc_labeller(pn_2018, "../dicionarios/dicionario_PNAD_CONTINUA_MICRODADOS_1_visita_2018_20191016.xls")
+
+library(haven)
+dt_sas <- read_sas(file.choose())
+View(dt_sas) 
+
+#grava em sas
+write_sas(dt_sas, "C:/Users/cgt/Desktop/verificar_sas.sas7bdat")

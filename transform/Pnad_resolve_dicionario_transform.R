@@ -1,0 +1,7 @@
+getwd()
+setwd("C:/Users/cgt/Documents/carlos/PNAD/transform")
+dir_transforme <- getwd()
+library(PNADcIBGE)
+library(readxl)
+library(magrittr)
+x <- scan(what = "integer")
